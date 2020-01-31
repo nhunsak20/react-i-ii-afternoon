@@ -1,0 +1,105 @@
+.profile-content {
+    margin: auto;
+
+    width: 100%;
+    height: 100%;
+}
+
+.profile-box {
+    width: 75%;
+    height: 400px;
+
+    margin: 100px auto;
+    align-items: center;
+
+    box-sizing: border-box;
+
+}
+.profile {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-color: white;
+    width: 100%;
+    height: 350px;
+}
+
+.profile-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.bolder {
+    font-weight: bold;
+}
+
+.profile-page {
+    float: right;
+    margin: 10px;
+
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.profile-name {
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: steelblue solid 3px;
+    box-sizing: border-box;
+    width: auto;
+    height: 50px;
+    font-weight: bolder;
+}
+
+.con{
+
+    width: 100%;
+    height: 50px;
+}
+
+.profile-event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.button {
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+
+    cursor: pointer;
+
+    border: none;
+
+    -webkit-user-select: none;
+}
+
+.profile-edit {
+    display: flex;
+}
+
+.profile-edit > div {
+    width: auto;
+    background-color: steelblue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin: auto 10px;
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    -webkit-user-select: none;
+}
+
+.movies-items {
+    padding-left: 50px;
+}
+.movie-list {
+    padding-left: 10px;
+}
