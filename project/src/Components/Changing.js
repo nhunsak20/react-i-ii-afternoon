@@ -7,7 +7,7 @@ class Changing extends Component {
     constructor() {
         super()
         this.state = {
-            page: 1
+            page: 0
         }
         
         this.handleNext = this.handleNext.bind(this)
@@ -17,27 +17,28 @@ class Changing extends Component {
     handleNext() {
         const currentPage = this.state.page
         const maxPage = this.props.data.length - 1
-
+        
         const nextPage = currentPage < maxPage ? currentPage + 1 : 0
-
+        
         this.setState({
             page: nextPage
         })
-
-        this.props.change(this.state.page)
+        
+        this.props.change(nextPage)
     }
-
+    
     handlePrevious() {
         const currentPage = this.state.page
         const maxPage = this.props.data.length - 1
-
+        
         const prevPage = currentPage <= 0 ? maxPage : currentPage - 1
+        
 
         this.setState({
             page: prevPage
         })
 
-        this.props.change(this.state.page)
+        this.props.change(prevPage)
     }
 
     render() {

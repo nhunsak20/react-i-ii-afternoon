@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Next(props) {
+function Previous(props) {
     const { page } = props
 
     return(
-        <div className='button' onClick={page}>Next  &#62;</div>
+        <div className='button' onClick={page}>&#60; Previous</div>
     )
 }
 
-export default Next
+export default Previous
